@@ -4,6 +4,25 @@ import "./Projects.css";
 const Projects = () => {
   const projects = [
     {
+      name: "Digital Album",
+      technologies: [
+        "C#",
+        "ASP.NET Core",
+        "Razor Engine",
+        "Tailwind CSS",
+        "Javascript",
+      ],
+      description:
+        "Digital Album is a full-stack ASP.NET Core MVC blog and Album website dedicated to documenting precious moments of a father's journey with his son. This beautiful web application allows you to create blog posts, manage photo albums, and preserve memories in an elegant digital format.",
+      features: [
+        "A dedicated admin panel with dedicated but secured admin route, content and user management facilities.",
+        "A dedicated Blog Section where you can share your journey with your son or beloved ones through image along with a sweet note from yourself. Blog Management can be done through Admin access.",
+        "A beautifully designed responsive Album section which provides you to upload every bitter-sweet memory of your son or beloved ones. Here you will have an Image Gallery, Interactive Slideshow Feature and Image Management facilities.",
+        "The project is keennly focused on authentication and security. Role-Based authentication, Secure Login, Anti-Forgery Tokens and Input Validation is applied here.",
+      ],
+      github: "https://github.com/Radwanyo33/Digital-Album",
+    },
+    {
       name: "Live Movie Database",
       technologies: [
         "ASP.NET Core",
@@ -20,7 +39,7 @@ const Projects = () => {
         "Search box for searching movies based on rating, genre, name, cast and release year.3",
         "Watch button to enjoy the movie in live mode.",
       ],
-      link: "https://livemovies.onrender.com/",
+      github: "https://github.com/Radwanyo33/movie-app",
     },
     {
       name: "SZMC Event Registration Form with Admin Panel & Payment Gateway",

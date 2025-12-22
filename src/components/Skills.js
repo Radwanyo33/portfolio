@@ -3,8 +3,8 @@ import './Skills.css';
 
 const Skills = () => {
     const skillsData = {
-        languages: ["PHP","C#","Python","Javascript","Java","SQL"],
-        frameworks: ["Laravel","ASP.NET Core","Django","Next.js","React","Node.js","Bootstrap"],
+        languages: ["PHP","C#","Python","Javascript","Java","SQL","TypeScript"],
+        frameworks: ["ASP.NET Core","Laravel","Django","Next.js","React","Node.js","Bootstrap"],
         databases: ["SQL Server", "Oracle", "MySQL", "PostgreSQL"],
         tools: ["Axios", "Ajax", "Git/GitHub", "JIRA", "Postman", "SoapUI", "XAMPP"],
         methodologies: ["Agile (Scrum)", "Waterfall"],

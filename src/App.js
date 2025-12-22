@@ -42,7 +42,7 @@ function App() {
   const getStaticData = () => {
     return {
       about: {
-        summary: "Fullstack developer with experience in Laravel,ASP.NET Core, Django, React.js, Database design, and FinTech systems. Skilled in building scalable REST APIs, database integration, and project collaboration using Agile/Scrum. Strong foundation in C#, PHP, Javascript and Python with hands-on project delivery in finance, healthcare, and web applications.",
+        summary: "Fullstack developer with experience in Laravel,ASP.NET Core, Django, React.js, Database design, and FinTech systems. Skilled in building scalable REST APIs, database integration, and project collaboration using Agile/Scrum. Strong foundation in C#, PHP, Javascript and Python with hands-on project delivery in finance and web applications.Highly motivated professional with strong organizational, coordination, and communication skills, backed by experience in operations support, system coordination, and cross-functional teamwork in a fast-paced FinTech environment. Adept at administrative support, stakeholder communication, reporting, and event coordination, with strong proficiency in computer applications and structured work environments.",
         hobbies: [
           "Programming & Learning New Technologies",
           "Open Source Contribution", 
