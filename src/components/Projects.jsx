@@ -97,6 +97,7 @@ const Projects = () => {
         "JavaScript frontend integration",
         "Authentication and donor/adopter management modules",
       ],
+      github: "https://github.com/Radwanyo33/BloodLife",
     },
   ];
   return (
