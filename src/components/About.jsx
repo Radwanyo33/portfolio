@@ -1,5 +1,5 @@
-import React from 'react';
-import './About.css';
+import React from "react";
+import "./About.css";
 
 const About = ({ data }) => {
   if (!data) {
@@ -8,10 +8,10 @@ const About = ({ data }) => {
 
   const handleDownloadResume = () => {
     // You can replace this with your actual resume file path
-    const resumeUrl = 'resume/Myresume.pdf'; // Place your resume in public folder as resume.pdf
-    const link = document.createElement('a');
+    const resumeUrl = "resume/Rafi_SE_01.pdf"; // Place your resume in public folder as resume.pdf
+    const link = document.createElement("a");
     link.href = resumeUrl;
-    link.download = 'Md_Radwanul_Hoque_Rafi_Resume.pdf';
+    link.download = "Md_Radwanul_Hoque_Rafi_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -25,18 +25,18 @@ const About = ({ data }) => {
           {/* Left Side - Personal Info & Image */}
           <div className="personal-info">
             <div className="profile-image-container">
-              <img 
+              <img
                 src="/assets/profile.png" // Update this path to your image
                 alt="Md. Radwanul Hoque Rafi"
                 className="profile-image"
                 onError={(e) => {
-                  e.target.style.display = 'none';
+                  e.target.style.display = "none";
                 }}
               />
             </div>
             <h2>Md. Radwanul Hoque Rafi</h2>
             <p className="title">Software Engineer & Web Developer</p>
-            
+
             <div className="contact-info">
               <p>📧 {data.email}</p>
               <p>📞 {data.phone}</p>
@@ -52,10 +52,18 @@ const About = ({ data }) => {
             </div>
 
             <div className="social-links">
-              <a href={data.linkedinUrl} target="_blank" rel="noopener noreferrer">
+              <a
+                href={data.linkedinUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 LinkedIn
               </a>
-              <a href={data.githubUrl} target="_blank" rel="noopener noreferrer">
+              <a
+                href={data.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 GitHub
               </a>
             </div>
@@ -92,11 +100,12 @@ const About = ({ data }) => {
             <div className="hobbies">
               <h3>Hobbies & Interests</h3>
               <div className="hobbies-list">
-                {data.hobbies && data.hobbies.map((hobby, index) => (
-                  <div key={index} className="hobby-item">
-                    {hobby}
-                  </div>
-                ))}
+                {data.hobbies &&
+                  data.hobbies.map((hobby, index) => (
+                    <div key={index} className="hobby-item">
+                      {hobby}
+                    </div>
+                  ))}
               </div>
             </div>
           </div>
