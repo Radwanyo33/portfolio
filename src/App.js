@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import {useCallback} from 'react';
 import Navbar from './components/Navbar';
 import About from './components/About';
 import Experiences from './components/Experiences';
@@ -19,9 +20,9 @@ function App() {
 
   useEffect(() => {
     loadPortfolioData();
-  }, []);
+  }, [loadPortfolioData]);
 
-  const loadPortfolioData = async () => {
+  const loadPortfolioData = useCallback(async () => {
     try {
       setLoading(true);
       setError(null);
@@ -35,7 +36,7 @@ function App() {
     } finally {
       setLoading(false);
     }
-  };
+  }, []);
 
   const getStaticData = () => {
     return {
