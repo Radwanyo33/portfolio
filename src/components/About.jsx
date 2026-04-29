@@ -35,7 +35,7 @@ const About = ({ data }) => {
               />
             </div>
             <h2>Md. Radwanul Hoque Rafi</h2>
-            <p className="title">Software Engineer & Web Developer</p>
+            <p className="title">Software Engineer</p>
 
             <div className="contact-info">
               <p>📧 {data.email}</p>
