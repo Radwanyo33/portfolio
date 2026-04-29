@@ -18,10 +18,6 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  useEffect(() => {
-    loadPortfolioData();
-  }, [loadPortfolioData]);
-
   const loadPortfolioData = useCallback(async () => {
     try {
       setLoading(true);
@@ -37,6 +33,10 @@ function App() {
       setLoading(false);
     }
   }, []);
+
+  useEffect(() => {
+    loadPortfolioData();
+  }, [loadPortfolioData]);
 
   const getStaticData = () => {
     return {
