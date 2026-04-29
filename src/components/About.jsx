@@ -8,7 +8,7 @@ const About = ({ data }) => {
 
   const handleDownloadResume = () => {
     // You can replace this with your actual resume file path
-    const resumeUrl = "resume/Rafi_SE_01.pdf"; // Place your resume in public folder as resume.pdf
+    const resumeUrl = "resume/Rafi_SE_02_LEADS.pdf"; // Place your resume in public folder as resume.pdf
     const link = document.createElement("a");
     link.href = resumeUrl;
     link.download = "Md_Radwanul_Hoque_Rafi_Resume.pdf";

@@ -1,19 +1,30 @@
-import React from 'react';
-import './Experiences.css';
+import React from "react";
+import "./Experiences.css";
 
 const Experiences = () => {
   const experiences = [
     {
+      company: "LEADS Corporation Limited",
+      position: "Software Engineer (Banking Solutions Department)",
+      location: "M-20, LEADS TOWER, Main Road No. 1, Mirpur-13, Dhaka 1206",
+      period: "May 2026 – Present",
+      responsibilities: [
+        "Building Robust Software Solutions: Plan, design and develop software applications tailored to client needs, ensuring high performance and scalability.",
+        "Collaboration: Working closely with cross-functional teams to ensure seamless project execution and delivery.",
+        "Support: Provide support to clients and internal teams regarding software issues and requirements for both new and legacy softwares.",
+      ],
+    },
+    {
       company: "Informax Technology Limited",
       position: "Software Engineer & Web Developer",
       location: "Lalmatia, Dhaka",
-      period: "Sep 2025 – Continuing",
+      period: "Sep 2025 – Apr 2026",
       responsibilities: [
         "Building Robust Software Solutions: Developing and maintaining high-quality software applications tailored to client needs.",
         "Web Development: Creating responsive and user-friendly websites using modern web technologies.",
         "Collaboration: Working closely with cross-functional teams to ensure seamless project execution and delivery.",
-        "Support: Provide post production support and maintenance for deployed applications."
-      ]
+        "Support: Provide post production support and maintenance for deployed applications.",
+      ],
     },
     {
       company: "FinTech Point",
@@ -25,9 +36,9 @@ const Experiences = () => {
         "Led enhancements for VISA and MasterCard systems including fraud rule testing and 3D secure validation",
         "Developed and tested card management systems using PowerCard modules, ensuring compliance with ISO 8583",
         "Collaborated in Agile teams with sprints, backlog grooming, and daily standups",
-        "Mentored junior team members and coordinated testing across SIT and UAT phases"
-      ]
-    }
+        "Mentored junior team members and coordinated testing across SIT and UAT phases",
+      ],
+    },
   ];
 
   return (
@@ -40,7 +51,9 @@ const Experiences = () => {
               <div className="timeline-marker"></div>
               <div className="timeline-content">
                 <h3>{exp.position}</h3>
-                <h4>{exp.company} - {exp.location}</h4>
+                <h4>
+                  {exp.company} - {exp.location}
+                </h4>
                 <p className="period">{exp.period}</p>
                 <ul className="responsibilities">
                   {exp.responsibilities.map((resp, idx) => (
